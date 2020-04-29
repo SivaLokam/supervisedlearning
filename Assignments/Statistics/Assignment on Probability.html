@@ -13160,9 +13160,9 @@ p(girl) = 1/2
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><div style="background-color:lightyellow">
-<b><font color='blue'> 5. In my town, it's rainy for one third of the days. Given that it is rainy, there will be heavy traffic with probability 1/2, and given that it is not rainy, there will be heavy traffic with probability 1/4. If it's rainy and there is heavy traffic, I arrive late for work with probability 1/2. On the other hand, the probability of being late is 1/8 if it is not rainy and there is no heavy traffic. In other situations (rainy and no traffic, not rainy and traffic) the probability of being late is 0.25, 0.25. You pick a random day.</font><b></p>
-
+<div style="background-color:lightyellow">
+<b><font color='blue'> 5. In my town, it's rainy for one third of the days. Given that it is rainy, there will be heavy traffic with probability 1/2, and given that it is not rainy, there will be heavy traffic with probability 1/4. If it's rainy and there is heavy traffic, I arrive late for work with probability 1/2. On the other hand, the probability of being late is 1/8 if it is not rainy and there is no heavy traffic. In other situations (rainy and no traffic, not rainy and traffic) the probability of being late is 0.25, 0.25. You pick a random day.</font><b>
+</div>
 </div>
 </div>
 </div>
@@ -13213,9 +13213,9 @@ p(rainy|Late) = [(1/2 X 1/2) + (1/4 X 1/2)] X 11/48 /(1/3) = 33/128
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><div style="background-color:lightyellow">
-<b><font color='blue'> 6. A box contains three coins: two regular coins and one fake two-headed coin (P(Heads)=1), You pick a coin at random and toss it. </font></b></p>
-
+<div style="background-color:lightyellow">
+<b><font color='blue'> 6. A box contains three coins: two regular coins and one fake two-headed coin (P(Heads)=1), You pick a coin at random and toss it. </font></b>
+</div>
 </div>
 </div>
 </div>
@@ -13230,24 +13230,31 @@ p(rainy|Late) = [(1/2 X 1/2) + (1/4 X 1/2)] X 11/48 /(1/3) = 33/128
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><div style="background-color:lightyellow">
-<b><font color='blue'>6a) What is the probability that it lands heads up? </font></b></p>
-<p><b>Analysis: and Answer: </b></p>
-<p>p(Heads) = p(H|fake)X p(fake) +p(H|regular) X p(regular) = (1 X 1/3) + (1/2 X 2/3) = 2/3</p>
-<p><hr>
-<b><font color='blue'>6b) You pick a coin at random and toss it and get heads. What is the probability that it is the two-headed coin?</font></b></p>
-<p><b>Analysis: and Answer: </b></p>
-<p>p(Heads) = 2/3 ( from previous question)</p>
-<p>p(fake|Heads) = p(Heads|fake) X p(fake) / p(Heads) = (1 X 1/3) / (2/3)= 1/2</p>
-<p><hr><hr>
-<b><font color='blue'>7. Suppose that, of all the customers at a coffee shop</font></b></p>
-<ul>
-<li>70% purchase a cup of coffee</li>
-<li>40% purchase a piece of cake</li>
-<li>20% purchase both a cup of coffee and a piece of cake. </li>
-</ul>
-<p><b><font color='blue'>Given that a randomly chosen customer has purchased a piece of cake, what is the probability that he/she also purchased a cup of coffee.</font></b></p>
+<div style="background-color:lightyellow">
+<b><font color='blue'>6a) What is the probability that it lands heads up? </font></b>
 
+<b>Analysis: and Answer: </b>
+
+p(Heads) = p(H|fake)X p(fake) +p(H|regular) X p(regular) = (1 X 1/3) + (1/2 X 2/3) = 2/3
+
+<hr>
+<b><font color='blue'>6b) You pick a coin at random and toss it and get heads. What is the probability that it is the two-headed coin?</font></b>
+
+<b>Analysis: and Answer: </b>
+
+p(Heads) = 2/3 ( from previous question)
+
+p(fake|Heads) = p(Heads|fake) X p(fake) / p(Heads) = (1 X 1/3) / (2/3)= 1/2
+
+<hr><hr>
+<b><font color='blue'>7. Suppose that, of all the customers at a coffee shop</font></b>
+
+* 70% purchase a cup of coffee
+* 40% purchase a piece of cake
+* 20% purchase both a cup of coffee and a piece of cake. 
+
+<b><font color='blue'>Given that a randomly chosen customer has purchased a piece of cake, what is the probability that he/she also purchased a cup of coffee.</font></b>
+</div>
 </div>
 </div>
 </div>
@@ -13288,19 +13295,21 @@ p(coffee|cake) = p(coffe and cake) / p(cake) = 0.2 / 0.4 = 0.5
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><div style="background-color:lightyellow">
-<b>Analysis: and Answer: </b></p>
-<p>p(Truth|white) = p(white|Truth) X p(Truth) / p(white)</p>
-<p>p(white) = p(white|Truth) X p(Truth) + p(white|False) X p(False)</p>
+<div style="background-color:lightyellow">
+<b>Analysis: and Answer: </b>
 
-<pre><code>     = (1/9 X 5/6) + (8/9 X 1/6) = 13 /54
+p(Truth|white) = p(white|Truth) X p(Truth) / p(white)
+
+p(white) = p(white|Truth) X p(Truth) + p(white|False) X p(False)
+
+         = (1/9 X 5/6) + (8/9 X 1/6) = 13 /54
 
 
-</code></pre>
-<p>p(Truth|white) = (1/9 X 5/6) / (13/54) = 5/13</p>
-<p><hr/>
-<b><font color='blue'>9 A speaks the truth 4 out of 5 times. A die is tossed. A report that it is a 6. What are the chances that there actually was a 6? </font></b></p>
+p(Truth|white) = (1/9 X 5/6) / (13/54) = 5/13
 
+<hr/>
+<b><font color='blue'>9 A speaks the truth 4 out of 5 times. A die is tossed. A report that it is a 6. What are the chances that there actually was a 6? </font></b>
+</div>
 </div>
 </div>
 </div>
@@ -13315,34 +13324,50 @@ p(coffee|cake) = p(coffe and cake) / p(cake) = 0.2 / 0.4 = 0.5
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><div style="background-color:lightyellow">
-<b>Analysis: and Answer: </b></p>
-<p>p(truth)= 4/5, p(false)=1/5,</p>
-<p>p(truth|6) = p(6|truth) X p(truth) / p(6) = 4/9</p>
+<div style="background-color:lightyellow">
+<b>Analysis: and Answer: </b>
+
+p(truth)= 4/5, p(false)=1/5, 
+
+p(truth|6) = p(6|truth) X p(truth) / p(6) = 4/9
 <hr>
 
-<p><b><font color='blue'>10. In a class, 40% of the student’s study math and science. 60% of the student’s study math. What is the probability of a student studying science given he/she is already studying math? </font></b></p>
-<p><b>Analysis: and Answer: </b></p>
-<p>p(Maths and Science) = 0.4, p(Maths) = 0.6</p>
-<p>P(science|Maths) = p( Maths and Science) / p(Maths)</p>
+<b><font color='blue'>10. In a class, 40% of the student’s study math and science. 60% of the student’s study math. What is the probability of a student studying science given he/she is already studying math? </font></b>
 
-<pre><code>              = 0.4/0.6 = 2/3
-</code></pre>
-<p><hr />
-<b><font color='blue'>11. Below is a table of graduates and post graduates </font></b></p>
-<p><img src="data:image/png;base64,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771UJ0nod5wqazFf31j/j05VoAeNKPJZs2alMFOmrTDTJptsUjzwwAOJjPiFR898mdscKsoWvLk0P/iBghMKATaA60bvCD4777zzCh6d73znO+tME8Xoun/4wx8mngBWHBefODe+cJ14wvXgCddXHvl6ATjrswFRzus39sd/ngmGgWPa5l7wmvu0T75P3/sMoPE+4He/9b17s5/rcEw83GujFehBD4bMl7/85fTsmwPrz1lzDu3c80MPPZTm0b7mBq3wAnnhOy895xYsWFB8+tOfHpADeAgt0Q7Ns4xyXN45bRZidIcC5jnCW92hfZy1BQVagR4C5OSTTy723HPPQb0mYvWS5AlqisainRbSVO3DO/Ctb30rKS+fASTubPsZBP73vve9tHiq3+j1oa+D3CGK0oKq3OIUwn333ZfCGDwJrougs805KD9hDUKPwOQu59oW3iCM7asrOWvT/meccUYKizh/jNYUGAroUbK8YsWKAcVz4YUXph5hPDIUmxwfeTeXX355mltrj1FmFBfAa5veHubJZ83uttlmm+Lss88uHnzwwf8BA/jG9tNPP72p9wUAAVb8xxcqFF2PXBLWv2ojilZemuvBE4Bb5gnXiwfx8/nnn58WpAV6HEt5tvAdg4CydWw8J9SGXjrRKvEXbnM/8t4oALTZeeedi+nTpxfvf//7k3eKckaHvK/rGywZuPVMdXdrK9BDNrgnzyb6ooVml9pluH+Gj++AP/QEVtEDDT3bwBIZg5b4gZwwf4CsOQCuhc0uuuii4utf/3o6nuPyQpM3MbpDgQA93aF7nLWCAq1AD4Uxc+bM5IomsPIguCgFIQWLZXoRSgQRy5u3JisYyop1S+ERjLYDLpSd31E6EhwJNhawnB7Kh6KUM+S7n/3sZynJmeXGOmSBC5lonOecABV3OUuQIASgJk6cmBIZeQGALAJULpJjH3jggenYjZZ9vr/4/wIFhgJ6eHokMPOoALvmmoICFMwvoGDugY13vOMdiU8svmp+AFx84PcUmP3f/va3F3vssUdanBWAyYDE1enyuttuu6XE+mzd+56CdX685Tf6xjz++OPpfFtssUX6jw8ADcpVZQlwwzPIi0BQO55QC2XK62hxWDwNRON7YV6f5S5RrhQvwAes4T88bZvjume/kxcnZ2Xfffctjj766HQMdOG1kJPkGIwCNAPwPR+9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" alt="image.png"></p>
-<p><b><font color='blue'>a)What is the probability that a randomly selected individual is a male and a graduate? What kind of probability is it ( Marginal / Joint / Conditional )</font></b></p>
-<p>p(male and graduate) = 19/100 = 0.19</p>
-<p><b> It is Joint Probability </b></p>
-<p><b><font color='blue'>b)What is the probability that a randomly selected individual is a male?</font></b></p>
-<p>p(male) = 60/100 = 0.6</p>
-<p><b><font color='blue'>c) What is the probability of a randomly selected individual being a graduate ? What kind of  probability is this?</font></b></p>
-<p>p(graduate) = 31/100 = 0.31</p>
-<p><b> It is marginal probability </b></p>
-<p><b><font color='blue'>d) What is the probability that a randomly selected person is a female given that the selected person is a post graduate ? What kind of probability is this? </font></b></p>
-<p>p(female|PG) = 28/69 (out of 69 PG, 28 are female)</p>
-<p><b>It is conditional probability </b></p>
+<b>Analysis: and Answer: </b>
 
+p(Maths and Science) = 0.4, p(Maths) = 0.6
+
+P(science|Maths) = p( Maths and Science) / p(Maths)
+
+                  = 0.4/0.6 = 2/3
+<hr />
+<b><font color='blue'>11. Below is a table of graduates and post graduates </font></b>
+
+![image.png](attachment:image.png)
+
+<b><font color='blue'>a)What is the probability that a randomly selected individual is a male and a graduate? What kind of probability is it ( Marginal / Joint / Conditional )</font></b> 
+
+p(male and graduate) = 19/100 = 0.19  
+
+<b> It is Joint Probability </b>
+
+<b><font color='blue'>b)What is the probability that a randomly selected individual is a male?</font></b> 
+
+p(male) = 60/100 = 0.6
+
+<b><font color='blue'>c) What is the probability of a randomly selected individual being a graduate ? What kind of  probability is this?</font></b> 
+
+p(graduate) = 31/100 = 0.31 
+
+<b> It is marginal probability </b>
+
+<b><font color='blue'>d) What is the probability that a randomly selected person is a female given that the selected person is a post graduate ? What kind of probability is this? </font></b> 
+
+p(female|PG) = 28/69 (out of 69 PG, 28 are female)
+
+<b>It is conditional probability </b>
+</div>
 </div>
 </div>
 </div>
@@ -13366,7 +13391,7 @@ p(coffee|cake) = p(coffe and cake) / p(cake) = 0.2 / 0.4 = 0.5
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <div style="background-color:lightyellow"> 
-<b><font color='blue'> 12. You need to figure out whether a company is fraud based on the legal charges they filed. We have the knowledge that, the chances a company submitting fraudulent fillings is 0.1. There exists an algorithm that can predict fraud. This algorithm returns a correct positive result in 92% of the cases in which the fraud is present and correct negative results in 90% of the cases where the fraud is not present. Suppose we observe a company for whom the algorithm test returns a fraud result. Calculate the posterior probability that this company truly did fraud in their filings.`
+<b><font color='blue'> 12. You need to figure out whether a company is fraud based on the legal charges they filed. We have the knowledge that, the chances a company submitting fraudulent fillings is 0.1. There exists an algorithm that can predict fraud. This algorithm returns a correct positive result in 92% of the cases in which the fraud is present and correct negative results in 90% of the cases where the fraud is not present. Suppose we observe a company for whom the algorithm test returns a fraud result. Calculate the posterior probability that this company truly did fraud in their filings.</font></b> 
 </div>
 </div>
 </div>
