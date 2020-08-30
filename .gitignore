@@ -140,6 +140,7 @@ cython_debug/
 #input and models
 books/
 ClassNotes/
+datasets/
 LiveClasses/
 Prework/
 PythonBasics/
@@ -151,3 +152,7 @@ PythonBasics/
 *.h5
 *.pkl
 *.pth
+*.zip
+*.sqlite
+*.sqlite3
+*.sqlite3-journal
